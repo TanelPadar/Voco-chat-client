@@ -15,7 +15,7 @@ const Input: React.FunctionComponent = () => {
      
     <div className="form-group">
     
-    <textarea className="form-control"  id="exampleFormControlTextarea1" rows={7} style={{  borderBottomRightRadius:"5px" }} ></textarea>
+    <textarea className="form-control"  id="exampleFormControlTextarea1" rows={7} style={{  borderBottomRightRadius:"5px", borderTopRightRadius:"0px" }} ></textarea>
   </div>
   
   
