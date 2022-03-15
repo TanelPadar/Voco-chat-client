@@ -26,7 +26,7 @@ const Chat: React.FC = () => {
       </div>
       <div className="d-flex justify-content-center">
         <div className="row" style={{ width: "600px" }}>
-          <div className="col-2 d-flex align-items-center justify-content-center bg-white" style={{marginBottom:"10px",  borderBottomLeftRadius:"5px" }}>
+          <div className="col-2 d-flex align-items-center justify-content-center bg-white" style={{marginBottom:"25px",  borderBottomLeftRadius:"5px" }}>
             <Name />
           </div>
           <div className="col-10 p-0">
@@ -34,6 +34,7 @@ const Chat: React.FC = () => {
           </div>
         </div>
       </div>
+     
       <div className="d-flex justify-content-center">
       <div className="d-flex justify-content-end" style={{width:"600px"}}>
       <Button />

@@ -14,11 +14,19 @@ const Input: React.FunctionComponent = () => {
   return (
      
     <div className="form-group">
-    
-    <textarea className="form-control"  id="exampleFormControlTextarea1" rows={7} style={{  borderBottomRightRadius:"5px", borderBottomLeftRadius:"0px", borderTopRightRadius:"0px", borderTopLeftRadius:"0px" }} ></textarea>
-    <p>{content.length}</p>
-  </div>
-  
+
+      <textarea className="form-control" id="exampleFormControlTextarea1" rows={7} style={{ borderBottomRightRadius: "5px", borderBottomLeftRadius: "0px", borderTopRightRadius: "0px", borderTopLeftRadius: "0px" }}
+
+        onChange={event => setFormattedContent(event.target.value)}
+        value={content}>
+          
+        </textarea>
+        <p className="limit">
+      {content.length}/{limit}
+        </p>
+
+    </div>
+        
   
       );
     }
