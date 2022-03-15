@@ -16,6 +16,7 @@ const Input: React.FunctionComponent = () => {
     <div className="form-group">
     
     <textarea className="form-control"  id="exampleFormControlTextarea1" rows={7} style={{  borderBottomRightRadius:"5px", borderBottomLeftRadius:"0px", borderTopRightRadius:"0px", borderTopLeftRadius:"0px" }} ></textarea>
+    <p>{content.length}</p>
   </div>
   
   
