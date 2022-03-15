@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +11,10 @@ html {
    
 }
 
-html {
+.chat,html {
     
-    background: rgb(57,79,189);
-    background: radial-gradient(circle, rgba(57,79,189,1) 12%, rgba(130,70,252,1) 85%);
+    background: rgb(57,79,189 ) !important;
+    background: radial-gradient(circle, rgba(57,79,189,1) 12%, rgba(130,70,252,1) 85%) !important ;
     height: 100%;
 
     
@@ -81,8 +83,8 @@ h3 {
    
     
 }
-
-.Input textarea {
+/*
+.Input1 , .Input2 {
     background-color: white;
     width: 35em;
     resize: none;
@@ -142,7 +144,7 @@ h3 {
     transform:translate(-5px, -20px);
 }
     
-    
+*/
      
 
  

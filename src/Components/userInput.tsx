@@ -12,21 +12,13 @@ const Input: React.FunctionComponent = () => {
   );
  
   return (
-    <div className="Input"  >
-      <textarea placeholder="Write your message here..."
-      onChange={event => setFormattedContent(event.target.value)}
-      value={content}
-        
-       
      
-        
-      >
-      
-      </textarea>
-      <p className="limit">
-        {content.length}/{limit}
-      </p>
-    </div>
+    <div className="form-group">
+    
+    <textarea className="form-control"  id="exampleFormControlTextarea1" rows={7} style={{  borderBottomRightRadius:"5px" }} ></textarea>
+  </div>
+  
+  
       );
     }
   

@@ -6,13 +6,15 @@ import Input from "./userInput";
 
 
 
-function tekst() {
+
+function tekst(): JSX.Element {
   const shoot = () => {
     alert("see tekst on äge")
   }
 
   return (
-    <button className="btn1" onClick={shoot}>Send</button>
+    <button type="button" className="btn btn-primary" onClick={shoot}>Saada</button>
+    
     );
   }
 
