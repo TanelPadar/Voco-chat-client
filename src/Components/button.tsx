@@ -1,15 +1,17 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
 import Input from "./userInput";
 
+interface ButtonProps {
+  submitHandler: React.MouseEventHandler<HTMLButtonElement>;
+}
 
 
 
-
-
-function tekst(): JSX.Element {
+function tekst({ submitHandler }: ButtonProps): JSX.Element  {
   const shoot = () => {
-    alert("see tekst on äge")
+    return <pre>{JSON.stringify(postMessage, null, 2)}</pre>;
   }
 
   return (
