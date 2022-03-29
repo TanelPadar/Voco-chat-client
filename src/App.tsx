@@ -1,15 +1,12 @@
-import React from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
 import Chat from "./Components/Chat";
 
-
-const App: React.FC = () => {
-  return (
-   <div>
-     <Chat />
-     
-   </div>
-  );
-}
-
-export default App;
+export default function App() {  
+   
+    return (
+        <div>
+            <Chat />
+        </div>
+    )
+};

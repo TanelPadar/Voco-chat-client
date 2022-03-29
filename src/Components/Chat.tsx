@@ -8,27 +8,40 @@ import Name from "./Name";
 import Button from "./button";
 
 const Chat: React.FC = () => {
+  const authorAndMessage = {
+    username:'',
+    message:'',
+  }
 
   const[author, setAuthor] = useState<string>('');
   const[message, setMessage] = useState<string>('');
-  const[messages, setMessages] = useState<Array<object>>([]);
+  const[messages, setMessages] = useState([]as typeof authorAndMessage[]);
+  const today = new Date();
+  const yyyy = today.getFullYear();
+  let mm = today.getMonth() + 1; // Months start at 0!
+  let dd = today.getDate();
+
 
   const submitMessages = () => {
+   
     setMessages([...messages, { username: author, message: message }]);
     setMessage('');
+    
 }
+
+  
   return (
     <div className="chat">
       <h3>VOCO</h3>
 
       <div className="chat__container">
-        {data.map((cardItem) => {
+        {messages.map((authorAndMessage,index) => {
           return (
             <ChatCard
-              key={cardItem.id}
-              username={cardItem.username}
-              message={cardItem.message}
-              date={cardItem.date}
+              key={index}
+              username={authorAndMessage.username}
+              message={authorAndMessage.message}
+              date={new Date(Date.now()).toLocaleString()}
             />
           );
         })}

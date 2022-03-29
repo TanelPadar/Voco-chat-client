@@ -1,7 +1,11 @@
-import { getValue } from "@testing-library/user-event/dist/utils";
 import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from 'react-dom';
+import submitMessages from "./Chat";
+import ChatCard from "./ChatCard";
 import Input from "./userInput";
+import data from "../data.json";
+import { callbackify } from "util";
+
 
 interface ButtonProps {
   submitHandler: React.MouseEventHandler<HTMLButtonElement>;
@@ -11,11 +15,12 @@ interface ButtonProps {
 
 function tekst({ submitHandler }: ButtonProps): JSX.Element  {
   const shoot = () => {
-    return <pre>{JSON.stringify(postMessage, null, 2)}</pre>;
+    alert("jou")
+   
   }
 
   return (
-    <button type="button" className="btn btn-primary" onClick={shoot}>Saada</button>
+    <button type="button" className="btn btn-primary" onClick={submitHandler}>Saada</button>
     
     );
   }
