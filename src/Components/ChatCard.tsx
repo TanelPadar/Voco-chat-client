@@ -13,7 +13,7 @@ const ChatCard: React.FC<ChatCardProps> = ({ username, message, date }) => {
             <div className='card__message'>{message}</div>
             <div className='card__group'>
                 <div className='card__username'>{username}</div>
-                <div style={{width:'10px'}}></div>
+                <div style={{width:'10px'}}> &nbsp;• </div>
                 <div className='card__date'>{date}</div>
             </div>
 
